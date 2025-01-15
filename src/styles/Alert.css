@@ -1,0 +1,30 @@
+.swal-custom-title {
+    font-size: 68px;
+    font-weight: 500;
+    font-family: "Lavishly Yours", cursive;
+  }
+  
+  .swal-custom-text {
+    font-size: 20px;
+    color: #333; 
+    font-family: "Forum", serif;
+    margin-top: 10px;
+    letter-spacing: 2px;
+  }
+  
+
+  .swal-custom-button {
+    background-color: transparent;
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Forum", serif;
+    padding: 10px 20px;
+    border: 1px solid #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .swal-custom-button:hover {
+    background-color: #e9e6e8; 
+  }

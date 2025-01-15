@@ -1,0 +1,70 @@
+.cart-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cart-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.left-section {
+  flex: 3;
+}
+
+.right-section {
+  flex: 2;
+}
+
+.right-section .cart {
+  margin-top: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Forum", serif;
+  background-color: #e7e7e5;
+}
+
+@media (max-width: 768px) {
+  .cart-container {
+    flex-direction: column; 
+    gap: 10px; 
+    padding: 10px; 
+  }
+
+  .left-section,
+  .right-section {
+    flex: 1; 
+  }
+
+  .right-section .cart {
+    margin-top: 10px; 
+  }
+
+  .cart-container .cart {
+    padding: 15px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .cart-container {
+    gap: 5px; 
+    padding: 5px; 
+  }
+
+  .cart-container .cart {
+    padding: 10px; 
+  }
+
+  .cart-container h4 {
+    font-size: 16px; 
+  }
+
+  .cart-container table {
+    font-size: 14px; 
+  }
+}

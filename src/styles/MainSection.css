@@ -1,0 +1,12 @@
+  .custom-heading-one {
+    font-family: "Lavishly Yours", serif;
+    font-size: 150px;
+    letter-spacing: 5px;
+  }
+
+  .custom-heading-two {
+    font-family: "Forum", serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }

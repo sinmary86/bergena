@@ -1,0 +1,136 @@
+.about-container {
+  color: #333;
+  padding: 5%;
+  background-color: #e7e7e5;
+} 
+
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  gap: 80px;
+}
+
+.about-text {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.about-text h3 {
+  font-family: "Lavishly Yours", cursive;
+  font-size: 82px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* подчеркивание текста */
+.about-text h3::before {
+  content: '';
+  position: absolute;
+  bottom: -8px; 
+  left: 0;
+  width: 100px; 
+  height: 1px; 
+  background-color: black;
+}
+
+.about-text p {
+  font-family: "Forum", serif;
+  line-height: 1.6;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* эффект рамки картинка */
+.about-image.imgOne img {
+  width: 600px;
+  height: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  position: relative;
+}
+
+.about-image.imgOne::before {
+  content: "";
+    position: absolute;
+    top: 40px; 
+    left: -30px; 
+    bottom: 40px; 
+    border-top: 1px solid black; 
+    border-left: 1px solid black; 
+    border-bottom: 1px solid black; 
+    width: calc(100% - 38px); 
+    height: calc(100% - 80px); 
+    z-index: 10; 
+  }
+
+.about-image.imgTwo img {
+  width: 500px;
+  height: 700px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  position: relative;
+}
+
+.about-image.imgTwo {
+  justify-content: flex-start; /* Прижимаем картинку ко левой части */
+}
+
+.about-image.imgTwo::before {
+  content: "";
+    position: absolute;
+    top: 40px; 
+    left: 0; 
+    bottom: 40px; 
+    border-top: 1px solid black; 
+    border-right: 1px solid black; 
+    border-bottom: 1px solid black;
+    width: calc(100% - 70px);
+    height: calc(100% - 80px);
+    z-index: 10; 
+  }
+
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .about-section.reverse {
+    flex-direction: column-reverse; 
+  }
+
+  .about-text {
+    margin: 0 0 20px;
+  }
+
+  .about-image img {
+    width: 100%; 
+    height: auto; 
+  }
+
+  .about-image::before {
+    display: none; 
+  }
+
+  .about-text h3 {
+    font-size: 36px; 
+  }
+
+  .about-text p {
+    font-size: 16px; 
+  }
+}
+
+

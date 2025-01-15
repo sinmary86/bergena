@@ -1,0 +1,27 @@
+#startseite {
+  background-image: url('../assets/backgroundStartseite.png'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: #fff;
+  padding: 1% 1%;
+}
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-icons {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.main-section {
+  margin: auto; 
+  text-align: center;
+}
+
+

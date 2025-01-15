@@ -1,0 +1,43 @@
+.accordion {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  
+  .accordion-header {
+    background-color: #f9f9f9;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-family: "Forum", serif;
+    font-size: 14px !important;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .accordion-header:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .accordion-content {
+    padding: 20px;
+    background-color: #fff;
+    font-family: "Forum", serif;
+  }
+  
+  .delivery-date {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .delivery-date input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  

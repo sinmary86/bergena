@@ -1,0 +1,67 @@
+.recipient-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 1%;
+    background-color: #fff;
+  }
+  
+  .recipient-form label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .recipient-form .form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  .recipient-form .form-row {
+    display: flex;
+    gap: 20px; 
+  }
+  
+  .recipient-form input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+    width: 100%; 
+  }
+  
+  .recipient-form .radio-group {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; 
+    align-items: center;
+  }
+  
+  .radio-group label {
+    font-weight: 500;
+  } 
+
+  .recipient-form input[type="radio"] {
+    margin-right: 8px;
+  }
+  
+  .recipient-form .save-button {
+    background-color: #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .recipient-form .save-button:hover {
+   letter-spacing: 5px;
+  }  

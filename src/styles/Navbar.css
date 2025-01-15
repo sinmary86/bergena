@@ -1,0 +1,135 @@
+.custom-navbar {
+    background-color: transparent;
+    padding: 10px 20px;
+    font-family: "Forum", serif;
+  }
+  
+  .custom-navbar .logo {
+    height: 40px;
+    width: auto;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .custom-navbar .navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-middle {
+    gap: 70px;
+  }
+  
+  .custom-navbar .nav-link {
+    position: relative;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 400;
+    margin: 0 25px;
+    transition: color 0.3s ease;
+  }
+  
+  .custom-navbar .nav-link:hover,
+  .custom-navbar .nav-link:active {
+    letter-spacing: 0.1em;
+  }
+  
+  .custom-navbar .nav-link:after,
+  .custom-navbar .nav-link:before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 1px;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .custom-navbar .nav-link:hover:after,
+  .custom-navbar .nav-link:hover:before {
+    width: 70%;
+  }
+  
+  .custom-navbar .nav-link:before {
+    top: auto;
+    bottom: 0;
+  }
+  
+  .custom-navbar .nav-link:after {
+    top: 0;
+  }
+  
+  .custom-navbar .nav-link {
+    margin: 10px auto;
+  }
+  
+  /* Убираем лишние стили и возвращаем стандартный стиль бургер-меню Bootstrap */
+  .custom-navbar .navbar-toggler {
+    border: none;
+    padding: 0;
+    background-color: transparent; 
+  }
+  
+  .custom-navbar .navbar-toggler:focus {
+    outline: none; 
+    box-shadow: none; 
+  }
+  
+  /* Возвращаем стандартные полоски бургер-меню Bootstrap */
+  .custom-navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
+  @media (max-width: 992px) {
+    .phone-number {
+      display: none; 
+    }
+  
+    .custom-navbar .navbar-collapse {
+      position: fixed; 
+      top: 80px; 
+      left: 0;
+      width: 100%; 
+      background-color: rgba(4, 4, 4, 0.9); 
+      z-index: 1040; 
+      height: 100vh; 
+      display: flex;
+      flex-direction: column; 
+      justify-content: center; 
+      align-items: center;
+      visibility: hidden; 
+      opacity: 0;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+  
+    .custom-navbar .navbar-collapse.show {
+      visibility: visible; 
+      opacity: 1;
+    }
+
+    .custom-navbar .navbar-nav {
+      gap: 50px;
+      margin: 0; 
+    }
+  
+    .custom-navbar .nav-link {
+      margin: 0;
+    }
+
+    .custom-navbar .cart-icon {
+      margin-top: 40px;
+      font-size: 22px; 
+    }
+  }
+  
+  .custom-navbar .navbar-toggler {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+  }
