@@ -20,9 +20,9 @@ const CategoryFilter = () => {
 
   return (
     <div className="category-filter">
-      {categories.map((category, index) => (
+      {categories.map((category) => (
         <button
-          key={index}
+          key={category}
           className={`filter-btn ${selectedCategory === category ? "active" : ""}`}
           onClick={() => handleFilterClick(category)}
         >

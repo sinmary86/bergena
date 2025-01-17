@@ -1,16 +1,8 @@
 import React from "react";
-import "../styles/CatalogHeader.css";
-import Navbar from "../components/Navbar";
+import PageHeader from "./PageHeader";
 
 const CatalogHeader = () => {
-  return (
-    <div className="catalog-header">
-      <div className="navbar-container">
-        <Navbar />
-      </div>
-      <h3>Katalog</h3>
-    </div>
-  );
+  return <PageHeader title="Katalog" />;
 };
 
 export default CatalogHeader;

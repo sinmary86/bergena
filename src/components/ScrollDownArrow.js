@@ -1,22 +1,15 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import '../styles/ScrollDownArrow.css';
 
 const CatalogSectionArrow = () => {
-
-  const navigate = useNavigate(); 
-
-  const goToCatalog = () => {
-    navigate('/catalog'); 
-  };
-
   return (
-    <div className="catalog-button" onClick={goToCatalog}> 
+    <Link to="/catalog" className="catalog-button"> 
       <p className="catalog-text">ZUM EINKAUFEN</p>
       <div className="arrow">
         <span>&#8595;</span>
       </div>
-    </div>
+    </Link>
   );
 };
 

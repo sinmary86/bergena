@@ -1,16 +1,8 @@
 import React from "react";
-import "../styles/CartHeader.css";
-import Navbar from "../components/Navbar";
+import PageHeader from "./PageHeader";
 
 const CartHeader = () => {
-  return (
-    <div className="cart-header">
-      <div className="navbar-container">
-        <Navbar />
-      </div>
-      <h3>Warenkorb</h3>
-    </div>
-  );
+  return <PageHeader title="Warenkorb" />;
 };
 
 export default CartHeader;

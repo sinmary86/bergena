@@ -2,8 +2,6 @@ import React from "react";
 import "../styles/Modal.css";
 
 const Modal = ({ title, content, onClose }) => {
-
-  console.log("Modal props:", { title, content });
   
   return (
     <div className="modal-overlay" onClick={onClose}>

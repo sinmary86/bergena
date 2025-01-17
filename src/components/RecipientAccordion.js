@@ -21,18 +21,23 @@ const RecipientAccordion = ({ setAddress }) => {
     setFormData({ ...formData, [name]: value });
   };
 
+  const requiredFields = [
+    "gender",
+    "firstName",
+    "lastName",
+    "street",
+    "number",
+    "plz",
+    "city",
+    "phone",
+  ];
+
+  const isAnyFieldEmpty = requiredFields.some((field) => !formData[field]);
+
   const handleSave = (e) => {
     e.preventDefault();
 
-    if (
-      !formData.gender ||
-      !formData.firstName ||
-      !formData.lastName ||
-      !formData.street ||
-      !formData.number ||
-      !formData.plz ||
-      !formData.city
-    ) {
+    if (isAnyFieldEmpty) {
       errorAlert();
       return;
     }

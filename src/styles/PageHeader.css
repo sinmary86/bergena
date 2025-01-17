@@ -1,22 +1,21 @@
-.cart-header {
+.page-header {
     background-image: url("../assets/backgroundKatalog.png");
     background-size: cover;
     background-position: center;
     height: 50vh;
-    display: flex;
-    flex-direction: column;
+    padding: 20px;
     text-align: center;
-    margin: 0;
-    padding: 0;
-  }
-
-  .navbar-container {
-    width: 100%;
-    padding: 0;
-    margin: 0;
   }
   
-  .cart-header h3 {
+  .navbar-container {
+    margin-bottom: 10px;
+  }
+  
+  .page-header.about-header {
+    background-image: url("../assets/backgroundAbout.png");
+  }
+  
+  .page-header h3 {
     color: #fff;
     font-family: "Lavishly Yours", cursive;
     font-size: 120px;
@@ -24,10 +23,10 @@
     margin-top: 30px;
   }
   
+    
   @media (max-width: 768px) {
-    .catalog-header h1 {
+    .page-header h3 {
       font-size: 28px;
       margin-top: 15px;
     }
   }
-  
