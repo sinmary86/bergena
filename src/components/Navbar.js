@@ -17,7 +17,7 @@ const NavigationBar = () => {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mx-auto nav-middle">
           <Nav.Link href="/">Startseite</Nav.Link>
-          <Nav.Link href="/about">Über uns</Nav.Link> 
+          <Nav.Link as={Link} to="/about">Über uns</Nav.Link> 
           <Nav.Link as={Link} to="/catalog">Katalog</Nav.Link>
         </Nav>
         <Nav className="nav-right">
