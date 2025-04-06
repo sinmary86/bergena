@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import StripeContainer from "../Stripe/StripeContainer";
 import { emptyCartAlert, purchaseSuccessAlert } from '../components/Alert';
 import {
   incrementQuantity,
@@ -11,16 +12,6 @@ import "../styles/Cart.css";
 const Cart = ({ address, deliveryDate }) => {
   const dispatch = useDispatch();
   const { items, totalAmount } = useSelector((state) => state.cart);
-
-  const handlePurchase = () => {
-    if (items.length === 0) {
-      emptyCartAlert();
-      return;
-    }
-
-    purchaseSuccessAlert();
-    dispatch(clearCart());
-  };
 
   return (
     <div className="cart">
@@ -83,9 +74,15 @@ const Cart = ({ address, deliveryDate }) => {
             </tbody>
           </table>
           <h4>Gesamtsumme: {totalAmount.toFixed(2)} €</h4>
-          <button className="btn-buy checkout" onClick={handlePurchase}>
-            Kaufen
-          </button>
+
+          <div>
+      <StripeContainer onPaymentSuccess={() => {
+  purchaseSuccessAlert();
+  dispatch(clearCart());
+}} />
+    </div>
+
+     
         </>
       )}
     </div>
