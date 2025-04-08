@@ -1,9 +1,9 @@
 import React from "react";
 import { useStripe, useElements, CardElement } from "@stripe/react-stripe-js";
 import axios from "axios";
-import { purchaseSuccessAlert, errorAlert } from "../components/Alert";
+import { errorAlert } from "../components/Alert";
 
-export const CheckoutForm = () => {
+export const CheckoutForm = ( { onPaymentSuccess }) => {
     const stripe = useStripe();
     const elements = useElements();
   
@@ -29,12 +29,17 @@ export const CheckoutForm = () => {
           console.log("Stripe 35 | data", response.data.success);
           if (response.data.success) {
             console.log("CheckoutForm.js 25 | payment successful!");
+            if (onPaymentSuccess) {
+              onPaymentSuccess(); 
+            }
           }
         } catch (error) {
           console.log("CheckoutForm.js 28 | ", error);
+          errorAlert("Fehler bei der Zahlung.");
         }
       } else {
         console.log(error.message);
+        errorAlert(error.message);
       }
     };
 

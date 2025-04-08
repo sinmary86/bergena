@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import StripeContainer from "../Stripe/StripeContainer";
-import { emptyCartAlert, purchaseSuccessAlert } from '../components/Alert';
+import { purchaseSuccessAlert } from '../components/Alert';
 import {
   incrementQuantity,
   decrementQuantity,
@@ -77,8 +77,8 @@ const Cart = ({ address, deliveryDate }) => {
 
           <div>
       <StripeContainer onPaymentSuccess={() => {
-  purchaseSuccessAlert();
-  dispatch(clearCart());
+          purchaseSuccessAlert();
+          dispatch(clearCart());
 }} />
     </div>
 

@@ -15,6 +15,7 @@ app.post("/stripe/charge", cors(), async (req, res) => {
   console.log("stripe-routes.js 10 | amount and id", amount, id);
   try {
     const payment = await stripe.paymentIntents.create({
+      return_url: 'https://example.com/return_url',
       amount: amount,
       currency: "EUR",
       description: "Bergena",

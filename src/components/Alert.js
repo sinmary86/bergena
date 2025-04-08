@@ -6,7 +6,7 @@ export const errorAlert = () => {
     Swal.fire({
         icon: "error",
         title: "Fehler",
-        html: '<div class="swal-custom-text">Bitte füllen Sie alle Pflichtfelder aus!</div>',
+        html: '<div class="swal-custom-text">Bitte überprüfen Sie alle Pflichtfelder!</div>',
         confirmButtonText: "OK",
         customClass: {
             title: 'swal-custom-title',
@@ -15,20 +15,6 @@ export const errorAlert = () => {
           },
         });
       };
-
-export const emptyCartAlert = () => {
-  Swal.fire({
-    icon: 'error',
-    title: 'Ihr Warenkorb ist leer!',
-    html: '<div class="swal-custom-text">Bitte wählen Sie eine Ware aus</div>', 
-    confirmButtonText: 'Weiter kaufen',
-    customClass: {
-      title: 'swal-custom-title',
-      text: 'swal-custom-text',
-      confirmButton: 'swal-custom-button',
-    },
-  });
-};
 
 export const purchaseSuccessAlert = () => {
   Swal.fire({

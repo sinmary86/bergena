@@ -7,10 +7,10 @@ const PUBLIC_KEY = "pk_test_51RAo4iB4Gxz6w6aJrQWoGc9XhGycWlb1S63CjvPZtQOmVCeRZb2
 
 const stripeTestPromise = loadStripe(PUBLIC_KEY);
 
-const Stripe = () => {
+const Stripe = ({ onPaymentSuccess }) => {
   return (
     <Elements stripe={stripeTestPromise}>
-      <CheckoutForm />
+      <CheckoutForm onPaymentSuccess={onPaymentSuccess}/>
     </Elements>
   );
 };
