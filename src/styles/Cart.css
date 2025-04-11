@@ -18,6 +18,10 @@
     padding: 20px; 
   }
 
+  .quantityContainer {
+    display: flex;
+  }
+
   .cart h4 {
     margin-top: 20px;
     font-size: 18px;
@@ -52,7 +56,6 @@
   .cart table td img {
     max-width: 60px;
     border-radius: 8px;
-    margin-right: 10px;
   }
   
   .btn-quantity {
@@ -120,4 +123,40 @@
   .delivery-summary p {
     font-size: 16px;
     margin: 5px 0;
+  }
+
+  .table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  @media (max-width: 768px) {
+    .cart table {
+      min-width: 600px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cart {
+      padding: 5px;
+    }
+  
+    .cart h4 {
+      font-size: 16px;
+    }
+  
+    .btn-quantity {
+      font-size: 14px;
+      padding: 1px 1px;
+    }
+  
+    .btn-buy {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    .address-summary p,
+    .delivery-summary p {
+      font-size: 14px;
+    }
   }

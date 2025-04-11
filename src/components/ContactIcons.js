@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/ContactIcons.css';
-import { contactIconsData } from '../data/dataIcons'; // Импортируем данные
+import { contactIconsData } from '../data/dataIcons'; 
 
 const ContactIcons = () => {
   return (

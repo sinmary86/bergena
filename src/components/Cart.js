@@ -49,6 +49,8 @@ const Cart = ({ address, deliveryDate }) => {
         <p>Ihr Warenkorb ist leer</p>
       ) : (
         <>
+
+<div className="table-wrapper">
           <table>
             <thead>
               <tr>
@@ -63,7 +65,7 @@ const Cart = ({ address, deliveryDate }) => {
                 <tr key={item.id}>
                   <td>{item.name}</td>
                   <td>{item.price} €</td>
-                  <td>
+                  <td className='quantityContainer'> 
                     <button className="btn-quantity" onClick={() => dispatch(incrementQuantity(item.id))}>+</button>
                     {item.quantity}
                     <button className="btn-quantity" onClick={() => dispatch(decrementQuantity(item.id))}>-</button>
@@ -73,6 +75,7 @@ const Cart = ({ address, deliveryDate }) => {
               ))}
             </tbody>
           </table>
+          </div>
           <h4>Gesamtsumme: {totalAmount.toFixed(2)} €</h4>
 
           <div>

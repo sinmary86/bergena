@@ -17,9 +17,3 @@
     }
   }
   
-  @media (max-width: 480px) {
-    .product-grid .product-card {
-      flex: 1 1 100%; 
-    }
-  }
-  

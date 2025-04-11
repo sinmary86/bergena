@@ -10,3 +10,26 @@
     text-transform: uppercase;
     letter-spacing: 5px;
   }
+
+  .main-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center; 
+  }
+
+  @media (max-width: 768px) {
+    .custom-heading-one {
+      font-size: 110px;
+    }
+  
+    .custom-heading-two {
+      font-size: 50px;
+      letter-spacing: 3px;
+    }
+
+    .main-section {
+      margin-top: 20%;
+  }
+  }

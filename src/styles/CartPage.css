@@ -46,7 +46,7 @@ body {
   }
 
   .cart-container .cart {
-    padding: 15px; 
+    padding: 0; 
   }
 }
 
@@ -57,7 +57,7 @@ body {
   }
 
   .cart-container .cart {
-    padding: 10px; 
+    padding: 0; 
   }
 
   .cart-container h4 {

@@ -25,7 +25,6 @@
   position: relative;
 }
 
-/* подчеркивание текста */
 .about-text h3::before {
   content: '';
   position: absolute;
@@ -83,7 +82,7 @@
 }
 
 .about-image.imgTwo {
-  justify-content: flex-start; /* Прижимаем картинку ко левой части */
+  justify-content: flex-start; 
 }
 
 .about-image.imgTwo::before {

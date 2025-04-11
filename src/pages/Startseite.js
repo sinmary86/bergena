@@ -13,7 +13,7 @@ const HomePage = () => {
       <NavigationBar />
 
     
-        <div className="d-flex flex-grow-1 position-relative">
+        <div>
           <ContactIcons />
           <MainSection />
           <ScrollDownArrow />

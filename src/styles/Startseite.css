@@ -5,7 +5,6 @@
   background-repeat: no-repeat;
   height: 100vh;
   color: #fff;
-  padding: 1% 1%;
 }
 
 .homepage {
@@ -15,13 +14,9 @@
 
 .contact-icons {
   position: absolute;
-  bottom: 20px;
-  left: 20px;
+  bottom: 3%;
+  left: 2%;
 }
 
-.main-section {
-  margin: auto; 
-  text-align: center;
-}
 
 

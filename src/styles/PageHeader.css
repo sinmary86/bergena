@@ -7,10 +7,6 @@
     text-align: center;
   }
   
-  .navbar-container {
-    margin-bottom: 10px;
-  }
-  
   .page-header.about-header {
     background-image: url("../assets/backgroundAbout.png");
   }
@@ -20,13 +16,18 @@
     font-family: "Lavishly Yours", cursive;
     font-size: 120px;
     letter-spacing: 5px;
-    margin-top: 30px;
   }
   
     
   @media (max-width: 768px) {
     .page-header h3 {
-      font-size: 28px;
-      margin-top: 15px;
+      font-size: 60px;
+      padding-top: 1rem;
     }
+
+    .page-header {
+      height: 35vh;
+      padding: 10px;
+    }
+    
   }

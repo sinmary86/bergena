@@ -1,14 +1,12 @@
 .custom-navbar {
     background-color: transparent;
-    padding: 10px 20px;
+    padding: 2%;
     font-family: "Forum", serif;
   }
   
   .custom-navbar .logo {
     height: 40px;
     width: auto;
-    padding: 0;
-    margin: 0;
   }
   
   .custom-navbar .navbar-nav {
