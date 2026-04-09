@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/AboutInfo.css";
-import photoMission from "../assets/missionImage.jpg";
-import photoComposition from "../assets/floral-arrangement.jpg"
+import photoMission from "../assets/missionImage.webp";
+import photoComposition from "../assets/floral-arrangement.webp"
 import Carousel from "./Carousel";
 import carouselImages from "../data/dataCarousel"; 
 

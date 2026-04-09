@@ -3,7 +3,7 @@ const dataCatalogItems = [
     {
       id: 1,
       price: 35,
-      img: 'catalogItemOne.png',
+      img: 'catalogItemOne.webp',
       name: 'Harmony',
       category: 'HOCHZEITS STRAUß'
   },
@@ -11,7 +11,7 @@ const dataCatalogItems = [
   {
     id: 2,
     price: 25,
-    img: 'catalogItemTwo.png',
+    img: 'catalogItemTwo.webp',
     name: 'Zärtlichket',
     category: 'TAGES STRAUß'
 },
@@ -19,7 +19,7 @@ const dataCatalogItems = [
 {
     id: 3,
     price: 55,
-    img: 'catalogItemThree.png',
+    img: 'catalogItemThree.webp',
     name: 'Wahre liebe',
     category: 'HOCHZEITS STRAUß'
 },
@@ -27,7 +27,7 @@ const dataCatalogItems = [
 {
     id: 4,
     price: 40,
-    img: 'catalogItemFour.png',
+    img: 'catalogItemFour.webp',
     name: 'Adel',
      category: 'TAGES STRAUß'
 },
@@ -35,7 +35,7 @@ const dataCatalogItems = [
 {
     id: 5,
     price: 30,
-    img: 'catalogItemFive.png',
+    img: 'catalogItemFive.webp',
     name: 'Freude',
     category: 'FEIERLICHER STRAUß'
 },
@@ -43,7 +43,7 @@ const dataCatalogItems = [
 {
     id: 6,
     price: 27,
-    img: 'catalogItemSix.png',
+    img: 'catalogItemSix.webp',
     name: 'Aufmerksamkeit',
     category: 'FEIERLICHER STRAUß'
 },
@@ -51,7 +51,7 @@ const dataCatalogItems = [
 {
     id: 7,
     price: 56,
-    img: 'catalogItemSeven.png',
+    img: 'catalogItemSeven.webp',
     name: 'Märchentraum',
     category: 'FEIERLICHER STRAUß'
 },
@@ -59,7 +59,7 @@ const dataCatalogItems = [
 {
     id: 8,
     price: 35,
-    img: 'catalogItemTwelve.png',
+    img: 'catalogItemTwelve.webp',
     name: 'Alles Liebe',
     category: 'HOCHZEITS STRAUß'
 },
@@ -68,7 +68,7 @@ const dataCatalogItems = [
 {
     id: 9,
     price: 55,
-    img: 'catalogItemNine.png',
+    img: 'catalogItemNine.webp',
     name: 'Eleganz',
     category: 'HOCHZEITS STRAUß'
 },
@@ -76,7 +76,7 @@ const dataCatalogItems = [
 {
     id: 10,
     price: 25,
-    img: 'catalogItemTen.png',
+    img: 'catalogItemTen.webp',
     name: 'Frühling',
     category: 'TAGES STRAUß'
 },
@@ -84,7 +84,7 @@ const dataCatalogItems = [
 {
     id: 11,
     price: 40,
-    img: 'catalogItemEleven.png',
+    img: 'catalogItemEleven.webp',
     name: 'Sonnentanz',
     category: 'TAGES STRAUß'
 },
@@ -92,7 +92,7 @@ const dataCatalogItems = [
 {
     id: 12,
     price: 30,
-    img: 'catalogItemEight.png',
+    img: 'catalogItemEight.webp',
     name: 'FarbenFroh',
     category: 'FEIERLICHER STRAUß'
 },
