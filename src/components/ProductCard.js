@@ -14,7 +14,7 @@ const ProductCard = ({ id, img, name, price }) => {
 
   return (
     <div className="product-card">
-      <img src={require(`../assets/${img}`)} alt={name} className="product-image" />
+      <img src={require(`../assets/${img}`)} alt={name} className="product-image" loading="lazy" />
       <h3 className="product-title">{name}</h3>
       <div className="product-info">
         <span className="product-price">{price} €</span>

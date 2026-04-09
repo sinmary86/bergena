@@ -35,6 +35,7 @@ const AboutInfo = () => {
           <img
             src={photoComposition}
             alt="Kompositionen"
+            loading="lazy"
           />
         </div>
         <div className="about-text">

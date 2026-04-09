@@ -13,7 +13,7 @@ const ContactIcons = () => {
           rel="noopener noreferrer"
           className="mb-3"
         >
-          <img src={icon.src} alt={icon.alt} className="contact-icon" />
+          <img src={icon.src} alt={icon.alt} className="contact-icon" loading="lazy" />
         </a>
       ))}
     </div>

@@ -30,7 +30,7 @@ const Carousel = ({ images }) => {
       <div className="carousel-images">
         {visibleImages.map((image, index) => (
           <div className="carousel-image-container" key={index}>
-            <img src={image} alt={`Slide ${index}`} className="carousel-image" />
+            <img src={image} alt={`Slide ${index}`} className="carousel-image" loading="lazy" />
           </div>
         ))}
       </div>
